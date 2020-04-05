@@ -1,0 +1,107 @@
+.container {
+  max-width: $container-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.bottom-line {
+  height: 3px;
+  background: $yellow;
+  width: 4rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.py {
+  &-1 {
+    padding: 1.5rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn {
+  &-green {
+    @extend %btn-shared;
+    background-color: $green;
+    color: #ffffff;
+  }
+
+  &-blue {
+    @extend %btn-shared;
+    background-color: $blue;
+    color: #ffffff;
+  }
+
+  &-steel {
+    @extend %btn-shared;
+    background-color: $steel;
+    color: #ffffff;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $yellow;
+}
+
+.bg {
+  &-light-grey {
+    background: $light-grey;
+    color: text-color($light-grey);
+  }
+  &-blue {
+    background: $blue;
+    color: text-color($blue);
+  }
+  &-green {
+    background: $green;
+    color: text-color($green);
+  }
+  &-steel {
+    background: $steel;
+    color: text-color($steel);
+  }
+  &-yellow {
+    background: $yellow;
+    color: text-color($yellow);
+  }
+  &-white {
+    background: $white;
+    color: text-color($white);
+  }
+}

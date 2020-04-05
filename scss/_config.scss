@@ -1,0 +1,19 @@
+$yellow: #f4c300;
+$blue: #184153;
+$steel: #337895;
+$green: #008329;
+$light-grey: #f4f4f4;
+$dark-grey: #333333;
+$white: #ffffff;
+$yellow-overlay: rgba(244, 195, 0, 0.9);
+$blue-overlay: rgba(24, 65, 83, 0.9);
+$container-width: 1280px;
+$background: url("../img/showcase.jpg");
+
+@function text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333333;
+  } @else {
+    @return #ffffff;
+  }
+}
